@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+  padding: 0;
+}
+
+body{
+      background: linear-gradient(to bottom, rgba(8, 168, 29, 1) 0%,rgba(87, 136, 199, 0.48) 50%,rgba(87, 136, 199, 0.48) 50%,rgba(237, 221, 83, 1) 100%);
+}
+
+/*Menu de navegação*/
+.menu_navegacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #a8fc0b30;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;  /*trocar width para deixar responsivo*/
+    height: 3rem;   /*trocar height para deixar responsivo*/
+    border-radius: 10px;
+}
+
+/*itens do menu de navegação*/
+.menu_navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin-right: 3rem;
+}
+
+/*icone do finpop*/
+.logo{
+    padding-right: 350px;
+    font-size: 24px;
+}
+
+/*aplicando estilo as letras do logo*/
+.logo .fin {
+  color: black;
+  font-weight: 400;
+}
+
+.logo .pop {
+  color: #006c4b;
+  font-weight: 700;
+}
+
+
+/*personalizando tag a e ações hover*/
+
+.menu_navegacao a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.menu_navegacao a:hover {
+    color: #007bff;
+}
+
+/*definindo espaçamento header e main*/
+header{
+    margin-bottom: 2rem;
+}
+
+.container_apresentacao{
+
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+/*propriedades da imagem dentro do container*/
+
+.container_apresentacao img{
+    width: 100%;
+    height: inherit;
+    margin-top: 2rem;
+    display: block;
+}
+
+/*propriedades do h1 que fica dentro da imagem*/
+.bem-vindo{
+    position: absolute;
+    top: 40%;
+    color: #ffffef;
+    font-size: 3rem;
+}
+
+.bem-vindo .fin {
+  color: black;
+  font-weight: 400;
+}
+
+.bem-vindo .pop {
+  color: #006c4b;
+  font-weight: 700;
+}
+
+/*propriedades do span que fica dentro da imagem*/
+.planejamento {
+  position: absolute;
+  top: 65%;
+  color: #ffffef;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+/*propriedade da seção história*/
+.secao-historia{
+  background-color: #0909794d;
+}
+
+/*propriedade do titulo história*/
+.titulo-historia{
+  text-align: center;
+}
+
+/*propriedade da descrição da história*/
+.descricao-historia{
+  text-align: left;
+}
+
+/*propriedades padrão das seções*/
+.secao{
+  
+  background-color: #0909794d;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+/*propriedades do posicionamento do conteúdo das seções*/
+.secao-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  /* permite quebrar em telas menores */
+  gap: 2rem;
+}
+
+/*Propriedades do container dos textos de conteúdos*/
+.container-conteudo{
+  flex: 1 1 300px;  /* cresce e encolhe conforme necessário */
+
+}
+/*Propriedades do container da imagens das seções*/
+.container-img{
+  flex: 1 1 400px;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container-img img{
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*propriedades padrão dos rótulos*/
+.rotulo{
+  font-size: 1.8rem;
+  color:#006c4b;
+  margin-bottom: 1rem;
+}
+
+/*propriedades padrão das descrições*/
+.descricao{
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/*Propriedades do rodapé*/
+footer{
+
+}
