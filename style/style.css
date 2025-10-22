@@ -88,25 +88,25 @@ header{
 }
 
 /*propriedades do h1 que fica dentro da imagem*/
-.bem-vindo{
+.titulo-banner{
     position: absolute;
     top: 40%;
     color: #ffffef;
     font-size: 3rem;
 }
 
-.bem-vindo .fin {
+.titulo-banner .fin {
   color: black;
   font-weight: 400;
 }
 
-.bem-vindo .pop {
+.titulo-banner .pop {
   color: #006c4b;
   font-weight: 700;
 }
 
 /*propriedades do span que fica dentro da imagem*/
-.planejamento {
+.texto-banner {
   position: absolute;
   top: 65%;
   color: #ffffef;
@@ -183,6 +183,69 @@ header{
 }
 
 /*Propriedades do rodapé*/
-footer{
+.rodape{
+  background-color: #006c4b;
+  color: white;
+  padding: 2rem;
+  font-size: 0.9rem;
 
+}
+
+/*Posicionamento do conteúdo do rodapé*/
+.rodape-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/*Propriedades do container faculdade e container autoria*/
+.rodape-identidade,
+.rodape-autoria {
+  flex: 1 1 250px;
+}
+
+/*Propriedades do logo faculdade*/
+.logo-faculdade {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+
+/*  Estilização dos componentes   */
+
+/* Botão padrão */
+.btn {
+  background-color: #006c4b;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn.texto{
+  color: #fff;
+  text-decoration: none;
+}
+
+/* comportamento do botão com cursor em cima do botão*/
+.btn:hover {
+  background-color: #004e36;
+}
+
+/* Link padrão */
+.link {
+  color: #006c4b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #004e36;
+  text-decoration: underline;
 }

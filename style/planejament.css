@@ -1,0 +1,14 @@
+@import url(./style.css);
+
+
+/*alterando posição do h1 que fica dentro da imagem*/
+
+.titulo-banner{
+    top: 30%;
+    left: 35%;
+}
+
+.texto-banner{
+    top: 50%;
+    left: 40%;
+}

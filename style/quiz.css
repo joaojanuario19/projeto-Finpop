@@ -1,0 +1,20 @@
+@import url(./style.css);
+
+
+/*alterando posição do h1 que fica dentro da imagem*/
+
+.titulo-banner{
+    top: 20%;
+    left: 40%;
+}
+
+.texto-banner{
+    top: 35%;
+    left: 50%;
+}
+
+.cta-quiz{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+}
