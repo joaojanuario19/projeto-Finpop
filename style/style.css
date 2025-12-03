@@ -3,10 +3,11 @@
 }
 
 html, body {
-  margin: 0;
   min-height: 100%;
   min-width: 100%;
+  margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 body{
@@ -248,4 +249,127 @@ header{
 .link:hover {
   color: #004e36;
   text-decoration: underline;
+}
+
+/*media query para o conteúdo do site respeitar o tamanho da tela*/
+
+
+/* Notebook (até 1200px) */
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .container-img img {
+    max-width: 80%;
+  }
+}
+
+/* Tablet (até 768px) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+
+/*Menu de navegação*/
+.menu_navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a8fc0b30;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;  /*trocar width para deixar responsivo*/
+    height: 2rem;   /*trocar height para deixar responsivo*/
+    border-radius: 10px;
+}
+
+/*itens do menu de navegação*/
+.menu_navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin-right: 2rem;
+}
+
+
+  .titulo-banner {
+    font-size: 24px;
+  }
+
+  .texto-banner {
+    font-size: 16px;
+  }
+}
+
+/* Celular (até 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+/*
+    header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu_navegacao ul {
+    flex-direction: column;
+    align-items: stretch;      cada item ocupa toda a linha 
+    gap: 10px;
+  }
+*/
+
+  /*Menu de navegação*/
+.menu_navegacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a8fc0b30;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;  /*trocar width para deixar responsivo*/
+    height: 2rem;   /*trocar height para deixar responsivo*/
+    border-radius: 10px;
+}
+
+/*itens do menu de navegação*/
+.menu_navegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 0.7rem;
+    padding: 0;
+    margin-right: 2rem;
+}
+
+  .container-conteudo {
+    padding: 10px;
+  }
+
+  .titulo-banner {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .texto-banner {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
 }
