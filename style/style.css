@@ -259,15 +259,17 @@ header{
   body {
     font-size: 16px;
   }
-
+  
   .container-conteudo {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
   }
 
   .container-img img {
     max-width: 80%;
   }
+
+
 }
 
 /* Tablet (até 768px) */
@@ -278,28 +280,36 @@ header{
 
 
 /*Menu de navegação*/
-.menu_navegacao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #a8fc0b30;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;  /*trocar width para deixar responsivo*/
-    height: 2rem;   /*trocar height para deixar responsivo*/
-    border-radius: 10px;
-}
 
-/*itens do menu de navegação*/
-.menu_navegacao ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    padding: 0;
-    margin-right: 2rem;
-}
+  .menu_navegacao{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #a8fc0b30;
+      position: inherit;
+      left: 0px;
+      top: 0px;
+      width: 100%;  /*trocar width para deixar responsivo*/
+      height: 2rem;   /*trocar height para deixar responsivo*/
+      border-radius: 10px;
+  }
 
+  /*itens do menu de navegação*/
+  .menu_navegacao ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin-right: 2rem;
+  }
+
+
+  .menu_navegacao a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: inherit;
+  }
 
   .titulo-banner {
     font-size: 24px;
@@ -316,19 +326,13 @@ header{
     font-size: 14px;
   }
 
-/*
+
     header nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
-  .menu_navegacao ul {
-    flex-direction: column;
-    align-items: stretch;      cada item ocupa toda a linha 
-    gap: 10px;
-  }
-*/
 
   /*Menu de navegação*/
 .menu_navegacao{
@@ -336,7 +340,7 @@ header{
     justify-content: center;
     align-items: center;
     background: #a8fc0b30;
-    position: absolute;
+    position: inherit;
     left: 0px;
     top: 0px;
     width: 100%;  /*trocar width para deixar responsivo*/
@@ -345,13 +349,21 @@ header{
 }
 
 /*itens do menu de navegação*/
-.menu_navegacao ul {
+
+  .menu_navegacao ul {
+    flex-direction: row;
+    align-items: stretch;      /*cada item ocupa toda a linha*/ 
     list-style: none;
     display: flex;
     gap: 0.7rem;
     padding: 0;
     margin-right: 2rem;
-}
+  }
+
+  .menu_navegacao a{
+    position: inherit;
+    margin-left: 20px;
+  }
 
   .container-conteudo {
     padding: 10px;
