@@ -39,7 +39,7 @@ body{
 
 /*icone do finpop*/
 .logo{
-    padding-right: 350px;
+    /*padding-right: 350px;*/
     font-size: 24px;
 }
 
@@ -292,9 +292,10 @@ header{
       width: 100%;  /*trocar width para deixar responsivo*/
       height: 2rem;   /*trocar height para deixar responsivo*/
       border-radius: 10px;
+      gap: 2.4rem;
   }
 
-  /*itens do menu de navegação*/
+  /*lista do menu de navegação*/
   .menu_navegacao ul {
       list-style: none;
       display: flex;
@@ -303,7 +304,7 @@ header{
       margin-right: 2rem;
   }
 
-
+    /*item do menu de navegação*/
   .menu_navegacao a {
     text-decoration: none;
     font-weight: bold;
@@ -312,7 +313,7 @@ header{
   }
 
   .titulo-banner {
-    font-size: 24px;
+    font-size: 1.6rem;
   }
 
   .texto-banner {
@@ -346,19 +347,17 @@ header{
     width: 100%;  /*trocar width para deixar responsivo*/
     height: 2rem;   /*trocar height para deixar responsivo*/
     border-radius: 10px;
+    gap: 1.2rem;
 }
 
-/*itens do menu de navegação*/
-
-  .menu_navegacao ul {
-    flex-direction: row;
-    align-items: stretch;      /*cada item ocupa toda a linha*/ 
+/*lista do menu de navegação*/
+.menu_navegacao ul {
     list-style: none;
     display: flex;
     gap: 0.7rem;
     padding: 0;
     margin-right: 2rem;
-  }
+}
 
   .menu_navegacao a{
     position: inherit;
