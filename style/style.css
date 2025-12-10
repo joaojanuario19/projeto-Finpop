@@ -278,28 +278,37 @@ header{
 
 
 /*Menu de navegação*/
-.menu_navegacao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #a8fc0b30;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;  /*trocar width para deixar responsivo*/
-    height: 2rem;   /*trocar height para deixar responsivo*/
-    border-radius: 10px;
-}
 
-/*itens do menu de navegação*/
-.menu_navegacao ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    padding: 0;
-    margin-right: 2rem;
-}
+  .menu_navegacao{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #a8fc0b30;
+      position: inherit;
+      left: 0px;
+      top: 0px;
+      width: 100%;  /*trocar width para deixar responsivo*/
+      height: 2rem;   /*trocar height para deixar responsivo*/
+      border-radius: 10px;
+      gap: 2.4rem;
+  }
 
+  /*lista do menu de navegação*/
+  .menu_navegacao ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      padding: 0;
+      margin-right: 2rem;
+  }
+
+    /*item do menu de navegação*/
+  .menu_navegacao a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: inherit;
+  }
 
   .titulo-banner {
     font-size: 24px;
@@ -342,9 +351,10 @@ header{
     width: 100%;  /*trocar width para deixar responsivo*/
     height: 2rem;   /*trocar height para deixar responsivo*/
     border-radius: 10px;
+    gap: 1.2rem;
 }
 
-/*itens do menu de navegação*/
+/*lista do menu de navegação*/
 .menu_navegacao ul {
     list-style: none;
     display: flex;
@@ -352,6 +362,11 @@ header{
     padding: 0;
     margin-right: 2rem;
 }
+
+  .menu_navegacao a{
+    position: inherit;
+    margin-left: 20px;
+  }
 
   .container-conteudo {
     padding: 10px;

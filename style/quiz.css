@@ -18,3 +18,9 @@
     top: 60%;
     left: 55%;
 }
+
+@media screen and (max-width: 480px) {
+    .btn{
+        width: auto;
+    }
+}
