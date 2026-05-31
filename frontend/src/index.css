@@ -1,0 +1,59 @@
+/* Estilo Global do Finpop */
+
+:root {
+  --primary-color: #006c4b;
+  --primary-hover: #004e36;
+  --secondary-color: #08a81d;
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  --accent-color: #007bff;
+  --accent-hover: #0056b3;
+  --card-bg: rgba(9, 9, 121, 0.3); /* Baseado no #0909794d original */
+  --bg-gradient: linear-gradient(to bottom, rgba(8, 168, 29, 1) 0%, rgba(87, 136, 199, 0.48) 50%, rgba(237, 221, 83, 1) 100%);
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: var(--text-dark);
+}
+
+body {
+  background: var(--bg-gradient);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Notebook (até 1200px) */
+@media screen and (max-width: 1200px) {
+  html, body {
+    font-size: 16px;
+  }
+}
+
+/* Tablet (até 768px) */
+@media screen and (max-width: 768px) {
+  html, body {
+    font-size: 15px;
+  }
+}
+
+/* Celular (até 480px) */
+@media screen and (max-width: 480px) {
+  html, body {
+    font-size: 14px;
+  }
+}

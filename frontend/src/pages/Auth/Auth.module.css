@@ -1,0 +1,100 @@
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  min-height: calc(100vh - 10rem);
+}
+
+.authCard {
+  background-color: rgba(9, 9, 121, 0.4);
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #a8fc0b;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.formGroup input {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus {
+  border-color: #a8fc0b;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.error {
+  background-color: rgba(255, 0, 0, 0.2);
+  border: 1px solid red;
+  color: #ffcccc;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.btnSubmit {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #006c4b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.btnSubmit:hover {
+  background-color: #004e36;
+}
+
+.switchText {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.switchLink {
+  color: #a8fc0b;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 0.3rem;
+}
+
+.switchLink:hover {
+  text-decoration: underline;
+}

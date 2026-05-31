@@ -1,0 +1,147 @@
+.containerApresentacao {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.containerApresentacao img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  display: block;
+  border-radius: 12px;
+}
+
+.tituloBanner {
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  color: #ffffef;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+.tituloBanner .fin {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.tituloBanner .pop {
+  color: #a8fc0b;
+  font-weight: 700;
+}
+
+.textoBanner {
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  color: #ffffef;
+  font-size: 1.8rem;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.secaoHistoria {
+  background-color: rgba(9, 9, 121, 0.3);
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.tituloHistoria {
+  text-align: center;
+  color: #a8fc0b;
+  margin-bottom: 1rem;
+}
+
+.descricaoHistoria {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.secao {
+  background-color: rgba(9, 9, 121, 0.3);
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.secaoFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.containerConteudo {
+  flex: 1 1 300px;
+}
+
+.containerImg {
+  flex: 1 1 400px;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.containerImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.rotulo {
+  font-size: 1.8rem;
+  color: #a8fc0b;
+  margin-bottom: 1rem;
+}
+
+.descricao {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f5f5f5;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #006c4b;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #004e36;
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+  .tituloBanner {
+    font-size: 1.8rem;
+    top: 25%;
+  }
+
+  .textoBanner {
+    font-size: 1.1rem;
+    top: 60%;
+  }
+
+  .secaoFlex {
+    flex-direction: column-reverse;
+  }
+}

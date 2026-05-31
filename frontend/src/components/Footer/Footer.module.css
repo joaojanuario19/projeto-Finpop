@@ -1,0 +1,34 @@
+.rodape {
+  background-color: #006c4b;
+  color: white;
+  padding: 2rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.rodapeFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.rodapeIdentidade,
+.rodapeAutoria {
+  flex: 1 1 250px;
+}
+
+.logoFaculdade {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .rodapeFlex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

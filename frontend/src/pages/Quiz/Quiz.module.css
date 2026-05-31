@@ -1,0 +1,290 @@
+.containerApresentacao {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.containerApresentacao img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  display: block;
+  border-radius: 12px;
+}
+
+.tituloBanner {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: #ffffef;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+.tituloBanner .fin {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.tituloBanner .pop {
+  color: #a8fc0b;
+  font-weight: 700;
+}
+
+.textoBanner {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  color: #ffffef;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.ctaQuiz {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  background-color: #006c4b;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ctaQuiz:hover {
+  background-color: #004e36;
+  transform: translateY(-2px);
+}
+
+.secao {
+  background-color: rgba(9, 9, 121, 0.3);
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.secaoFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.containerConteudo {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.containerImg {
+  flex: 1 1 400px;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.containerImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.rotulo {
+  font-size: 1.8rem;
+  color: #a8fc0b;
+  margin-bottom: 1rem;
+}
+
+.descricao {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f5f5f5;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #006c4b;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004e36;
+}
+
+/* Container do quiz ativo */
+.quizActiveBox {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.questionTitle {
+  font-size: 1.5rem;
+  color: #a8fc0b;
+  margin-bottom: 1.5rem;
+}
+
+.optionsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.optionBtn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.optionBtn:hover {
+  background: rgba(168, 252, 11, 0.2);
+  border-color: #a8fc0b;
+  padding-left: 1.5rem;
+}
+
+.progressText {
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: right;
+}
+
+/* Resultados */
+.resultBox {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.resultTitle {
+  font-size: 2rem;
+  color: #a8fc0b;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.resultScore {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.resultMsg {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #e5e4e7;
+}
+
+.explanationsTitle {
+  font-size: 1.4rem;
+  color: #a8fc0b;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 0.5rem;
+}
+
+.explicacaoItem {
+  margin-bottom: 1.5rem;
+  background: rgba(255,255,255,0.05);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.correctAnswer {
+  color: #2ecc71;
+  font-weight: 500;
+  margin: 0.3rem 0;
+}
+
+.wrongAnswer {
+  color: #e74c3c;
+  font-weight: 500;
+  margin: 0.3rem 0;
+}
+
+.explicationText {
+  color: #ddd;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.historySection {
+  margin-top: 3rem;
+  background: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.historyTitle {
+  font-size: 1.3rem;
+  color: #a8fc0b;
+  margin-bottom: 1rem;
+}
+
+.historyList {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.historyItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .tituloBanner {
+    font-size: 1.8rem;
+    top: 15%;
+  }
+
+  .textoBanner {
+    font-size: 1.1rem;
+    top: 50%;
+  }
+
+  .ctaQuiz {
+    top: 70%;
+  }
+
+  .secaoFlex {
+    flex-direction: column-reverse;
+  }
+}

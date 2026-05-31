@@ -1,0 +1,389 @@
+.containerApresentacao {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.containerApresentacao img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  display: block;
+  border-radius: 12px;
+}
+
+.tituloBanner {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  color: #ffffef;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: left;
+}
+
+.tituloBanner .fin {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.tituloBanner .pop {
+  color: #a8fc0b;
+  font-weight: 700;
+}
+
+.textoBanner {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  color: #ffffef;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.secao {
+  background-color: rgba(9, 9, 121, 0.3);
+  margin: 2rem 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.secaoFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.containerConteudo {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+.containerImg {
+  flex: 1 1 400px;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.containerImg img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.rotulo {
+  font-size: 1.8rem;
+  color: #a8fc0b;
+  margin-bottom: 1rem;
+}
+
+.descricao {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f5f5f5;
+}
+
+/* Abas de Ferramentas */
+.tabsContainer {
+  margin: 2rem 1rem;
+}
+
+.tabsHeader {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
+}
+
+.tabBtn {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px 8px 0 0;
+}
+
+.tabBtn:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.tabBtnActive {
+  background: #006c4b;
+  color: white;
+  border-bottom: 3px solid #a8fc0b;
+}
+
+/* Ferramenta Orçamento 50-30-20 */
+.orcamentoBox {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.toolTitle {
+  font-size: 1.8rem;
+  color: #a8fc0b;
+  margin-bottom: 1.5rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.inputGroup input {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.inputGroup input:focus {
+  border-color: #a8fc0b;
+}
+
+.distributionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.distCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-left: 5px solid #006c4b;
+}
+
+.distTitle {
+  font-size: 1.2rem;
+  color: #a8fc0b;
+  margin-bottom: 0.5rem;
+}
+
+.distValues {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.distValues strong {
+  font-size: 1.1rem;
+}
+
+.warning {
+  color: #ff9800;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.success {
+  color: #4caf50;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.btnAction {
+  background-color: #006c4b;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnAction:hover {
+  background-color: #004e36;
+}
+
+/* Metas */
+.metaBox {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.goalsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.goalCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.goalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.goalTitle {
+  font-size: 1.3rem;
+  color: #a8fc0b;
+}
+
+.btnDelete {
+  background: transparent;
+  border: none;
+  color: #e74c3c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.goalProgressContainer {
+  margin: 1rem 0;
+}
+
+.progressBarOuter {
+  width: 100%;
+  height: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progressBarInner {
+  height: 100%;
+  background: #006c4b;
+  transition: width 0.3s ease;
+}
+
+.goalInfo {
+  font-size: 0.9rem;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.goalSimulation {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #e5e4e7;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.8rem;
+  border-radius: 6px;
+  border-left: 3px solid #a8fc0b;
+}
+
+.goalUpdateForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.goalUpdateForm input {
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 100px;
+}
+
+.btnSmall {
+  background: #006c4b;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Artigos */
+.artigosGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.artigoCard {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border-top: 4px solid #a8fc0b;
+}
+
+.artigoTitle {
+  font-size: 1.2rem;
+  color: #a8fc0b;
+  margin-bottom: 0.8rem;
+}
+
+.artigoDesc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #e5e4e7;
+  margin-bottom: 1rem;
+}
+
+.artigoLink {
+  color: #a8fc0b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.artigoLink:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .tituloBanner {
+    font-size: 1.8rem;
+    top: 20%;
+  }
+
+  .textoBanner {
+    font-size: 1.1rem;
+    top: 50%;
+  }
+
+  .secaoFlex {
+    flex-direction: column-reverse;
+  }
+}
